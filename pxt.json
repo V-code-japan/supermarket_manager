@@ -8,6 +8,7 @@
     "files": [
         "main.blocks",
         "main.ts",
+        "docs/tutorials/mission.md",
         "README.md",
         "custom.ts"
     ],
