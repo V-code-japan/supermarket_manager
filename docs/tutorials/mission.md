@@ -17,7 +17,7 @@ GRASS,
 ## 必要なブロックをとりだそう①
 スーパーマーケットの内装を作るのに必要なブロックは、**プログラミング**でとりだしましょう。
 
-- ``||supermarket.スーパー作成||``から``||supermarket.～を1個 自分に渡す||``をとりだす
+- ``||supermarket.スーパー作成||``から``||supermarket.～を～個 自分に渡す||``をとりだす
 - ``||loops.最初だけ||``にはめ込む
 - 必要なブロックの種類、数にする
 
@@ -27,3 +27,21 @@ GRASS,
 - ``||mobs.モブ||``から``||mobs.ブロックを与える||``をとりだす
 - ``||loops.最初だけ||``にはめ込む
 - 必要なブロックの種類、数にする
+
+## 特別なブロックの使い方
+このワールドには、いくつか**特別な使い方をするブロックやアイテム**があります。
+次からのページで使い方を確認しましょう！
+
+## 買い物かご
+**買い物かご**というアイテムを手に持って、**置きたい場所を右クリック**すると、買い物かごを重ねておくことができます。
+![shopping_basket](https://raw.githubusercontent.com/V-code-japan/supermarket_manager/master/docs/static/set_shopping_basket.gif)
+
+## カート
+**カート**というブロックは**右クリック**すると、押すことができます。
+もう一度設置したいときは、**設置したい場所を右クリック**しましょう！
+![cart](https://raw.githubusercontent.com/V-code-japan/supermarket_manager/master/docs/static/set_shopping_cart.gif)
+
+## おまけ セール案内
+**セールの札**というブロックを置けば、セール品のように見せることができます。
+「ここにはセール品を並べたい！」というときに使いましょう！
+![sale](https://raw.githubusercontent.com/V-code-japan/supermarket_manager/master/docs/static/supermarket_sale.png)
