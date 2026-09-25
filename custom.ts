@@ -78,6 +78,85 @@ enum SupermarketBlock {
     Basket
 }
 
+/**
+ * スーパーマーケットのブロック・アイテムに対応するMinecraft IDを取得する
+ */
+function getId(block: SupermarketBlock): string {
+    switch (block) {
+        case SupermarketBlock.WalkInCooler:
+            return "edu:walk_in_cooler";
+
+        case SupermarketBlock.IcecreamCaseCorner:
+            return "edu:icecream_case_corner";
+
+        case SupermarketBlock.IcecreamCaseCornerReverse:
+            return "edu:icecream_case_corner_reverse";
+
+        case SupermarketBlock.IcecreamCaseMiddle:
+            return "edu:icecream_case_middle";
+
+        case SupermarketBlock.AnalogClock:
+            return "edu:analog_clock";
+
+        case SupermarketBlock.HotSnack:
+            return "edu:hot_snack";
+
+        case SupermarketBlock.Pos:
+            return "edu:pos";
+
+        case SupermarketBlock.Logo:
+            return "edu:logo";
+
+        case SupermarketBlock.ChilledShowcase:
+            return "edu:chilled_showcase";
+
+        case SupermarketBlock.Microwave:
+            return "edu:microwave";
+
+        case SupermarketBlock.Clerk:
+            return "edu:clerk";
+
+        case SupermarketBlock.FishDisplay:
+            return "edu:fish_display";
+
+        case SupermarketBlock.MeatDisplay:
+            return "edu:meat_display";
+
+        case SupermarketBlock.BreadShelf:
+            return "edu:bread_shelf";
+
+        case SupermarketBlock.SnackShelf:
+            return "edu:snack_shelf";
+
+        case SupermarketBlock.DelicaDisplay:
+            return "edu:delica_display";
+
+        case SupermarketBlock.MilkDisplay:
+            return "edu:milk_display";
+
+        case SupermarketBlock.GoodsShelf:
+            return "edu:goods_shelf";
+
+        case SupermarketBlock.ShoppingBasket:
+            return "edu:shopping_basket";
+
+        case SupermarketBlock.ShoppingCart:
+            return "edu:shopping_cart";
+
+        case SupermarketBlock.SelfRegister:
+            return "edu:self_register";
+
+        case SupermarketBlock.Sale:
+            return "edu:sale";
+
+        case SupermarketBlock.Basket:
+            return "edu:basket";
+
+        default:
+            return "";
+    }
+}
+
 
 
 //% weight=100 color=#0fbc11 icon=""
@@ -89,84 +168,5 @@ namespace supermarket {
     function giveSupermarketBlock(block: SupermarketBlock, amount: number): void {
         const id = getId(block);
         player.execute(`give @s ${id} ${amount}`);
-    }
-
-    /**
-     * スーパーマーケットのブロック・アイテムに対応するMinecraft IDを取得する
-     */
-    function getId(block: SupermarketBlock): string {
-        switch (block) {
-            case SupermarketBlock.WalkInCooler:
-                return "edu:walk_in_cooler";
-
-            case SupermarketBlock.IcecreamCaseCorner:
-                return "edu:icecream_case_corner";
-
-            case SupermarketBlock.IcecreamCaseCornerReverse:
-                return "edu:icecream_case_corner_reverse";
-
-            case SupermarketBlock.IcecreamCaseMiddle:
-                return "edu:icecream_case_middle";
-
-            case SupermarketBlock.AnalogClock:
-                return "edu:analog_clock";
-
-            case SupermarketBlock.HotSnack:
-                return "edu:hot_snack";
-
-            case SupermarketBlock.Pos:
-                return "edu:pos";
-
-            case SupermarketBlock.Logo:
-                return "edu:logo";
-
-            case SupermarketBlock.ChilledShowcase:
-                return "edu:chilled_showcase";
-
-            case SupermarketBlock.Microwave:
-                return "edu:microwave";
-
-            case SupermarketBlock.Clerk:
-                return "edu:clerk";
-
-            case SupermarketBlock.FishDisplay:
-                return "edu:fish_display";
-
-            case SupermarketBlock.MeatDisplay:
-                return "edu:meat_display";
-
-            case SupermarketBlock.BreadShelf:
-                return "edu:bread_shelf";
-
-            case SupermarketBlock.SnackShelf:
-                return "edu:snack_shelf";
-
-            case SupermarketBlock.DelicaDisplay:
-                return "edu:delica_display";
-
-            case SupermarketBlock.MilkDisplay:
-                return "edu:milk_display";
-
-            case SupermarketBlock.GoodsShelf:
-                return "edu:goods_shelf";
-
-            case SupermarketBlock.ShoppingBasket:
-                return "edu:shopping_basket";
-
-            case SupermarketBlock.ShoppingCart:
-                return "edu:shopping_cart";
-
-            case SupermarketBlock.SelfRegister:
-                return "edu:self_register";
-
-            case SupermarketBlock.Sale:
-                return "edu:sale";
-
-            case SupermarketBlock.Basket:
-                return "edu:basket";
-
-            default:
-                return "";
-        }
     }
 }
