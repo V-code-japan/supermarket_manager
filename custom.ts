@@ -164,7 +164,7 @@ function getId(block: SupermarketBlock): string {
 namespace supermarket {
 
     //% block="$block を $amount 個 自分に渡す"
-    function giveSupermarketBlock(block: SupermarketBlock, amount: number): void {
+    export function giveSupermarketBlock(block: SupermarketBlock, amount: number): void {
         const id = getId(block);
         player.execute(`give @s ${id} ${amount}`);
     }
