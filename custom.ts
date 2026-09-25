@@ -160,11 +160,10 @@ function getId(block: SupermarketBlock): string {
 
 
 //% weight=100 color=#0fbc11 icon=""
-//% block=スーパー作成
+//% block="スーパー作成"
 namespace supermarket {
 
-
-    //% block=ブロック $block を $amount 個 自分に渡す
+    //% block="ブロック $block を $amount 個 自分に渡す"
     function giveSupermarketBlock(block: SupermarketBlock, amount: number): void {
         const id = getId(block);
         player.execute(`give @s ${id} ${amount}`);
