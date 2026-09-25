@@ -4,83 +4,86 @@
 * 詳しくはこちらを参照してください：https://minecraft.makecode.com/blocks/custom
 */
 
+/**
+ * スーパーマーケットで使用するブロック・アイテム
+ */
+enum SupermarketBlock {
+    //% block="ウォークイン"
+    WalkInCooler,
+
+    //% block="アイスクリームケース（角）"
+    IcecreamCaseCorner,
+
+    //% block="アイスクリームケース（角・逆側）"
+    IcecreamCaseCornerReverse,
+
+    //% block="アイスクリームケース（真ん中）"
+    IcecreamCaseMiddle,
+
+    //% block="時計"
+    AnalogClock,
+
+    //% block="ホットスナック"
+    HotSnack,
+
+    //% block="POS"
+    Pos,
+
+    //% block="ロゴ"
+    Logo,
+
+    //% block="冷蔵ケース"
+    ChilledShowcase,
+
+    //% block="電子レンジ"
+    Microwave,
+
+    //% block="店員"
+    Clerk,
+
+    //% block="魚介類のディスプレイ"
+    FishDisplay,
+
+    //% block="肉類のディスプレイ"
+    MeatDisplay,
+
+    //% block="パンの棚"
+    BreadShelf,
+
+    //% block="お菓子の棚"
+    SnackShelf,
+
+    //% block="お惣菜のディスプレイ"
+    DelicaDisplay,
+
+    //% block="牛乳と卵のディスプレイ"
+    MilkDisplay,
+
+    //% block="日用品の棚"
+    GoodsShelf,
+
+    //% block="買い物かご"
+    ShoppingBasket,
+
+    //% block="カート"
+    ShoppingCart,
+
+    //% block="セルフレジ"
+    SelfRegister,
+
+    //% block="セールの札"
+    Sale,
+
+    //% block="野菜のカゴ"
+    Basket
+}
+
+
+
 //% weight=100 color=#0fbc11 icon=""
 //% block=スーパー作成
 namespace supermarket {
 
-    /**
-     * スーパーマーケットで使用するブロック・アイテム
-     */
-    export enum SupermarketBlock {
-        //% block="ウォークイン"
-        WalkInCooler,
-
-        //% block="アイスクリームケース（角）"
-        IcecreamCaseCorner,
-
-        //% block="アイスクリームケース（角・逆側）"
-        IcecreamCaseCornerReverse,
-
-        //% block="アイスクリームケース（真ん中）"
-        IcecreamCaseMiddle,
-
-        //% block="時計"
-        AnalogClock,
-
-        //% block="ホットスナック"
-        HotSnack,
-
-        //% block="POS"
-        Pos,
-
-        //% block="ロゴ"
-        Logo,
-
-        //% block="冷蔵ケース"
-        ChilledShowcase,
-
-        //% block="電子レンジ"
-        Microwave,
-
-        //% block="店員"
-        Clerk,
-
-        //% block="魚介類のディスプレイ"
-        FishDisplay,
-
-        //% block="肉類のディスプレイ"
-        MeatDisplay,
-
-        //% block="パンの棚"
-        BreadShelf,
-
-        //% block="お菓子の棚"
-        SnackShelf,
-
-        //% block="お惣菜のディスプレイ"
-        DelicaDisplay,
-
-        //% block="牛乳と卵のディスプレイ"
-        MilkDisplay,
-
-        //% block="日用品の棚"
-        GoodsShelf,
-
-        //% block="買い物かご"
-        ShoppingBasket,
-
-        //% block="カート"
-        ShoppingCart,
-
-        //% block="セルフレジ"
-        SelfRegister,
-
-        //% block="セールの札"
-        Sale,
-
-        //% block="野菜のカゴ"
-        Basket
-    }
 
     //% block=ブロック $block を $amount 個 自分に渡す
     function giveSupermarketBlock(block: SupermarketBlock, amount: number): void {
