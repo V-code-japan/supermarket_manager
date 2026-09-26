@@ -21,12 +21,24 @@ GRASS,
 - ``||loops.最初だけ||``にはめ込む
 - 必要なブロックの種類、数にする
 
+```blocks
+supermarket.giveSupermarketBlock(SupermarketBlock.WalkInCooler, 1)
+```
+
 ## 必要なブロックをとりだそう②
-その他の、通常のMinecraftのブロックもとりだして使うことができます。
+その他のブロックもとりだして使うことができます。
 
 - ``||mobs.モブ||``から``||mobs.ブロックを与える||``をとりだす
 - ``||loops.最初だけ||``にはめ込む
 - 必要なブロックの種類、数にする
+
+```blocks
+mobs.give(
+mobs.target(NEAREST_PLAYER),
+GRASS,
+1
+)
+```
 
 ## 特別なブロックの使い方
 このワールドには、いくつか**特別な使い方をするブロックやアイテム**があります。

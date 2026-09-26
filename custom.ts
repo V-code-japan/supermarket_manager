@@ -75,7 +75,13 @@ enum SupermarketBlock {
     Sale,
 
     //% block="野菜のカゴ"
-    Basket
+    Basket,
+
+    //% block="エンドロッド"
+    EndRod,
+
+    //% block="ネザライトのツルハシ"
+    NetheritePickaxe,
 }
 
 /**
@@ -151,6 +157,12 @@ function getId(block: SupermarketBlock): string {
 
         case SupermarketBlock.Basket:
             return "edu:basket";
+        
+        case SupermarketBlock.EndRod:
+            return "minecraft:end_rod";
+        
+        case SupermarketBlock.NetheritePickaxe:
+            return "minecraft:netherite_pickaxe";
 
         default:
             return "";
