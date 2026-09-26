@@ -1,5 +1,6 @@
 {
     "name": "supermarket_manager",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
